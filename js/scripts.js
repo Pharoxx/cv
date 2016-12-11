@@ -4,6 +4,8 @@ $(document).ready(function(){
 
 	setup_get_in_touch_link();
 
+	setup_slider();
+
 	// fix long contact section text
 	fix_long_contact_text();
 });
@@ -138,6 +140,15 @@ function setup_navigation(){
 function setup_get_in_touch_link(){
 	$('#get_in_touch_link').click(function(){
 		$(window).scrollTo('#scroller', 800);
+	});
+}
+
+function setup_slider(){
+	$('.slider').slick({
+	  infinite: false,
+	  dots: true,
+	  responsive: [{breakpoint: 1168},{breakpoint: 768}],
+	  adaptiveHeight: true
 	});
 }
 
