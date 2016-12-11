@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yakir Reznik - Curriculum vitae</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="js/jQuery.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/gauge/gauge.js"></script>
+</head>
+<body>
+	<style>
+		#loader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #191919;
+			z-index: 998;
+		}
+		#loader img {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			width: 240px;
+			margin: -90px auto auto -120px;
+			z-index: 999;
+		}
+	</style>
+	<div id="loader">
+		<img src="img/loader.gif" alt="loading..." />
+	</div>
+
+	<header class="section not_loaded" id="section-1">
+		<div class="wrapper">
+			<div class="mid-box">
+				<h1>Hi! I'm Yakir</h1>
+				<h2>And i like all things digital!</h2>
+				<a id="get_in_touch_link">Get in touch with me</a>
+			</div>
+			<img src="img/section-1-third.jpg" alt="Hi! I'm Yakir" />
+
+			<div class="burger-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div id="nav" class="hidden">
+				<ul>
+					<li>Introduction</li>
+					<li>What i've been up to</li>
+					<li>Experience & Qualities</li>
+					<li>Skills</li>
+					<li>Get in touch</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<section class="section not_loaded" id="section-2">
+		<div class="wrapper">
+			<h2>What i've been up to</h2>
+			
+			<ul class="timeline">
+				<li>
+					<i>2005 - 2008</i>
+					<h3>
+						<a target="_blank" href="http://www.idf.il/">Israeli Army</a>
+					</h3>
+					<p>Full service, Infantry</p>
+				</li>
+				<li>
+					<i>2009 - 2011</i>
+					<h3>
+						<a target="_blank" href="http://www.partner.co.il">Partner</a>
+					</h3>
+					<p>Team Manager<br/>Technical support call center</p>
+				</li>
+				<li>
+					<i>2012 - 2013</i>
+					<h3>
+						<a target="_blank" href="http://www.ksp.co.il">K.S.P</a>
+					</h3>
+					<p>Web Design &<br/>Front-End Development</p>
+				</li>
+				<li>
+					<i>2013 - Now</i>
+					<h3>
+						<a target="_blank" href="http://www.yes.co.il">yes (dbs)</a>
+					</h3>
+					<p>Website Manager &<br/>Digital Marketing</p>
+				</li>
+			</ul>
+			
+		</div>
+	</section>
+
+	<section class="section not_loaded" id="section-3">
+		<div class="wrapper">
+			<div class="leftBox">
+				<h2>Experience</h2>
+				<p>
+					My first real job was at Partner Communications LTD (formerly known as "orange") as a technical customer service representative for the company’s ISP and VOB services.<br/>
+					I’ve been at it for about six months before I was promoted to a Senior representative position and later on to a Team Leader position.<br/>
+					At the call center I learned a lot about servicing clients, communicating with all sorts of clients and co-workers, that gave me a good understating of what “quality” customer service should be like.<br/>
+					After around 3 years at Partner I’ve switched jobs and started working for K.S.P as a web developer. The organization looked at digital marketing as a key success factor although the website did not allow for actual purchases online every product that was sold at the physical stores had information about it on the website.<br/>
+					There I learned a lot about practical Web Design & Development in the real world. The job called for a lot of creativity and out of the box thinking.<br/>
+					My next job was at yes DBS (Satellite TV), There I built an online customer service team from  the ground up as the Team Leader. Lucky for me I already had the customer service experience and a good understanding of how customers operate online.<br/>
+					After about a year I got promoted to manage yes DBS website. As the website manager I’ve dealt mostly with the task of planning and designing new self-service actions customers could perform on the website.<br/>
+					I’ve also designed a lot of visual web components that were made to promote marketing messages, offers and more.<br/>
+					My day to day tasks included: managing the creative studio which produced visuals for the web components, managing the marketing firm that handled the SEM and SEO side of things. And managing meetings with in-house officials to determine which new features will be added to the website at each version, which enabled me to keep my front-end development skills sharp.<br/>
+				</p>
+			</div>
+			<div class="rightBox">
+				<h2>Qualities</h2>
+				<ul>
+					<li>Thinking on my feet</li>
+					<li>Self motivated</li>
+					<li>Creative thinking</li>
+					<li>Managing abundance of tasks</li>
+					<li>Super fast learning</li>
+					<li>Innovative</li>
+					<li>Technophile</li>
+					<li>Optimistic with a good sense of humor</li>
+				</ul>
+			</div>
+	</section>
+
+	<section class="section not_loaded" id="section-4">
+		<div class="wrapper">
+			<h2>Skills</h2>
+			<div class="items">
+				<div class="item">
+					<canvas class="circle" id="circle-1"></canvas>
+					<p>8.5/10</p>
+					<h3>Project Management</h3>
+				</div>
+				<div class="item">
+					<canvas class="circle" id="circle-2"></canvas>
+					<p>9/10</p>
+					<h3>Data Analysis</h3>
+				</div>
+				<div class="item">
+					<canvas class="circle" id="circle-3"></canvas>
+					<p>9/10</p>
+					<h3>UX & UI</h3>
+				</div>
+				<div class="item">
+					<canvas class="circle" id="circle-4"></canvas>
+					<p>8/10</p>
+					<h3>Front End Development</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<a href="" id="scroller"></a>
+
+	<section class="section not_loaded" id="section-5">
+		<div class="wrapper">
+			<h2>Lets Talk</h2>
+			<div class="item">
+				<img src="img/phone.png" alt="My phone number">
+				<p>+972 543 162 916</p>
+				<a href="tel:+972543162916">Give me a call</a>
+			</div>
+			<div class="item">
+				<img src="img/facebook.png" alt="My Facebook profile">
+				<p>yakir.reznik</p>
+				<a id="facebook_link" href="https://www.facebook.com/yakir.reznik" target="_blank">Catch me on Facebook</a>
+			</div>
+			<div class="item">
+				<img src="img/email.png" alt="My email address">
+				<p>yakir.reznik@gmail.com</p>
+				<a id="email_link" href="mailto:yakir.reznik@gmail.com">Send me an email</a>
+			</div>
+		</div>
+	</section>
+
+	<div id="size_checker"></div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+.section#section-5
+	background-color: $color-base-3
+	z-index: 6
+
+	h2
+		color: $color-base-1
+		margin-bottom: 6rem
+		+mobile
+			margin-bottom: 4rem
+
+	.item
+		width: 33.333%
+		float: left
+		text-align: center
+		+mobile
+			width: 100%
+			float: none
+			height: 3rem
+			margin-top: 1rem
+
+	img
+		width: 3rem
+		margin: 0 auto
+		transition: opacity 150ms ease-out 300ms, transform 300ms ease-out 300ms
+		+mobile
+			width: 2rem
+			float: left
+
+	p
+		color: $color-sec-1
+		margin-top: 1rem
+		transition: opacity 150ms ease-out 600ms, transform 300ms ease-out 600ms
+		+mobile
+			float: left
+			margin-top: -0.5rem
+			margin-left: 0.5rem
+			padding: 1rem 0
+			font-size: 0.85rem
+
+	a, a:visited
+		display: block
+		margin: 2rem auto
+		background-color: $color-sec-3
+		width: 13rem
+		text-align: center
+		padding: 1rem 0rem
+		border-radius: 4px
+		color: $color-base-2
+		text-decoration: none
+		transition: opacity 150ms ease-out 900ms, transform 300ms ease-out 900ms
+		&:hover
+			background-color: lighten($color-sec-3, 6%)
+		+mobile
+			float: right
+			width: auto
+			margin: -0.5rem 0 0 0
+			padding: 1rem 0.5rem
+			font-size: 0.85rem
+
+
+.section#section-5.not_loaded
+	img
+		transform: scale(0)
+		opacity: 0
+	p,a
+		transform: translateY(2rem)
+		opacity: 0

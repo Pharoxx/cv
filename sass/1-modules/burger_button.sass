@@ -1,0 +1,44 @@
+.burger-btn
+	position: absolute
+	top: 2rem
+	right: 0
+	width: 4rem
+	height: 4rem
+	padding: 1.4375rem 1.125rem
+	z-index: 100
+	cursor: pointer
+	background-color: $color-sec-1
+	border-radius: 100%
+	+mobile
+		width: 3rem
+		height: 3rem
+		padding: 16px 12px
+		top: 0.5rem
+		right: 0.5rem
+	span
+		background-color: $color-base-2
+		width: 1.75rem
+		height: 0.25rem
+		display: block
+		margin: 0.25rem 0 0 0
+		border-radius: 0.25rem
+		transform-origin: 50% 50%
+		transition: transform 200ms ease-in-out 50ms, opacity 200ms ease-in-out
+		&:nth-child(1)
+			margin: 0
+		+mobile
+			width: 24px
+			height: 3px
+
+.burger-btn.is-open
+	span:nth-child(2)
+		transform: scaleX(0)
+		opacity: 0
+	span:nth-child(1)
+		transform: translateY(8px) rotate(45deg)
+		+mobile
+			transform: translateY(7px) rotate(45deg)
+	span:nth-child(3)
+		transform: translateY(-8px) rotate(-45deg)
+		+mobile
+			transform: translateY(-7px) rotate(-45deg)

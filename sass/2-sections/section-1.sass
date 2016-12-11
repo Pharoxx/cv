@@ -1,0 +1,89 @@
+header#section-1
+	position: relative
+	background-color: $color-base-2
+	max-height: 38rem
+	&:before
+		background-color: $color-base-3
+		transform: rotate(5deg)
+		transform-origin: bottom left
+
+	.wrapper
+		+mq('padding-bottom', 30%, 45%, 90%)
+
+	img
+		z-index: 1
+		position: absolute
+		bottom: -40%
+		right: 0
+		max-width: 95%
+		max-height: 145%
+		transition: opacity 800ms ease-out 400ms
+		+tablet
+			right: -8%
+			max-width: 125%
+			max-height: 125%
+		+mobile
+			bottom: -20%
+			right: -17%
+			max-width: 134%
+			max-height: 104%
+	.mid-box
+		z-index: 3
+		position: absolute
+		max-width: 45%
+		height: 12rem
+		top: 40%
+		left: 0
+		transform: translateY(-50%)
+		+mobile
+			padding-left: 1rem
+			max-width: 65%
+			top: 50%
+
+		h1
+			text-align: left
+			font-family: $font-sec
+			font-size: 4rem
+			font-weight: normal
+			transition: opacity 400ms ease-out, transform 400ms ease-out
+			+tablet
+				font-size: 3rem
+			+mobile
+				font-size: 1.85rem
+
+		h2
+			text-align: left
+			font-family: $font-main
+			font-size: 1.5rem 
+			font-weight: normal
+			color: $color-sec-2
+			margin-top: 0.5rem
+			margin-bottom: 3rem
+			transition: opacity 400ms ease-out 200ms, transform 400ms ease-out 200ms
+			+tablet
+				font-size: 1.3rem
+			+mobile
+				font-size: 1rem
+
+		#get_in_touch_link
+			padding: 1rem 1.5rem
+			border-radius: 0.25rem
+			background-color: $color-base-3
+			color: $color-base-2
+			cursor: pointer
+			display: inline-block
+			transition: opacity 400ms ease-out 400ms, transform 400ms ease-out 400ms
+			&:hover
+				background-color: lighten($color-base-3, 6%)
+			+mobile
+				font-size: 0.85rem
+				padding: 0.75rem 0.5rem
+				margin-top: -1rem
+
+
+header#section-1.not_loaded
+	img
+		opacity: 0
+	h1, h2, #get_in_touch_link
+		opacity: 0
+		transform: translateY(3rem)

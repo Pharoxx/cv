@@ -1,0 +1,39 @@
+#nav
+	background-color: $color-sec-1
+	padding: 2rem 1rem
+	position: absolute
+	top: 2rem
+	right: 5.5rem
+	z-index: 3
+	transition: transform 300ms ease-out, opacity 400ms ease-out
+	transform-origin: 100% 2rem
+	box-shadow: 0.25rem 0.75rem 1rem rgba(#000, 0.3)
+	+mobile
+		top: 0
+		right: 4.5rem
+	&:after
+		content: ' '
+		display: block
+		width: 0
+		height: 0
+		position: absolute
+		top: 1.5rem
+		right: -0.75rem
+		border-top: 0.75rem solid transparent
+		border-bottom: 0.75rem solid transparent
+		border-left: 0.75rem solid $color-sec-1
+
+	ul, li
+		list-style-type: none
+	li
+		margin-bottom: 1rem
+		cursor: pointer
+		color: $color-base-1
+		&:last-child
+			margin-bottom: 0
+		&:hover
+			color: darken($color-base-2, 6%)
+
+#nav.hidden
+	transform: scale(0)
+	opacity: 0
