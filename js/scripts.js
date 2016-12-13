@@ -8,6 +8,8 @@ $(document).ready(function(){
 
 	// fix long contact section text
 	fix_long_contact_text();
+
+	setup_print_view(); // add ?print to see print view
 });
 
 function setupScrollEvents(){
@@ -150,6 +152,30 @@ function setup_slider(){
 	  responsive: [{breakpoint: 1168},{breakpoint: 768}],
 	  adaptiveHeight: true
 	});
+}
+
+function setup_print_view(){
+
+   // add ?print to url to get print view
+
+   var getUrlParameter = function getUrlParameter(sParam) {
+      var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+         sURLVariables = sPageURL.split('&'),
+         sParameterName,
+         i;
+
+      for (i = 0; i < sURLVariables.length; i++) {
+         sParameterName = sURLVariables[i].split('=');
+         if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+         }
+      }
+   }
+
+   if(getUrlParameter('print')) {
+      $('body').addClass('print-view');
+   }
+
 }
 
 //scrollTo
