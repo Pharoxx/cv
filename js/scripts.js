@@ -149,6 +149,9 @@ function setup_slider(){
 	$('.slider').slick({
 	  infinite: false,
 	  dots: true,
+	  speed: 650,
+	  //draggable: false,
+	  swipeToSlide: true,
 	  responsive: [{breakpoint: 1168},{breakpoint: 768}],
 	  adaptiveHeight: true
 	});
