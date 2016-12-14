@@ -76,12 +76,12 @@
 
 	.slider
 		width: 47rem
-		height: 26rem
+		height: 26.5rem
 		position: relative
 		padding: 0 1rem
 		+tablet
 			width: 42rem
-			height: 29rem
+			height: 30rem
 			margin-left: 1rem
 		+mobile
 			width: 100%
@@ -89,22 +89,36 @@
 			padding: 0 2rem
 			margin-bottom: 6.5rem
 
+		.slick-track
+			perspective: 800px
+
+		.slick-list
+			+desktop
+				height: auto !important
+			+tablet
+				height: auto !important
 		.slide
 			width: 100%
-			height: 26rem
+			height: 26.5rem
 			border: 1px solid rgba($color-base-2, 0)
 			padding: 2rem
-			transition: opacity 200ms ease-out, border-color 500ms ease-out 320ms 
-			opacity: 0
+			transition: opacity 200ms ease-out 0ms, border-color 500ms ease-out 320ms, transform 300ms ease-out
+			transform: rotateY(28deg) scale(0.88)
+			transform-origin: 5% 50% 0
+			opacity: 0.35
 			+tablet
-				height: 29rem
+				height: 30rem
 			+mobile
 				height: auto
 				padding: 0.5rem
 
+		.slide.slick-active + .slide
+			transform: rotateY(-28deg) scale(0.88)
+
 		.slide.slick-active
 			opacity: 1
 			border: 1px solid rgba($color-base-2, 0.35)
+			transform: rotateY(0deg) scale(1)
 
 		.slick-dots
 			bottom: -3rem
