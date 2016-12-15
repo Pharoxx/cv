@@ -25,3 +25,6 @@ $RECYCLE.BIN/
 
 #Photoshop
 *.psd
+
+#npm and grunt
+node_modules/

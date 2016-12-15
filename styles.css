@@ -1,44 +1,61 @@
+/* generated with grunt-sass-globbing */
 .wrapper:after, .section#section-2 .timeline:after, .section#section-4 .items:after {
   display: block;
-  content: " ";
+  content: ' ';
   clear: both; }
 
 /* COLORS */
+/* light red */
+/* mid red */
+/* dark red */
+/* light blue */
+/* mid blue */
+/* dark blue */
+/* white */
+/* light brown */
+/* almost black */
 /* FONTS */
 @font-face {
   font-family: Ubuntu;
   src: url("fonts/ubuntu/Ubuntu-Regular.ttf");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: Ubuntu;
   src: url("fonts/ubuntu/Ubuntu-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
+
 @font-face {
   font-family: Ubuntu;
   src: url("fonts/ubuntu/Ubuntu-Italic.ttf");
   font-weight: normal;
   font-style: italic; }
+
 @font-face {
   font-family: merriweather;
   src: url("fonts/merriweather/Merriweather-Light.ttf");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: merriweather;
   src: url("fonts/merriweather/Merriweather-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
+
 @font-face {
   font-family: merriweather;
   src: url("fonts/merriweather/Merriweather-Italic.ttf");
   font-weight: normal;
   font-style: italic; }
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent; }
 
@@ -88,8 +105,11 @@ html, body {
     display: block;
     margin: 0.25rem 0 0 0;
     border-radius: 0.25rem;
-    transform-origin: 50% 50%;
-    transition: transform 200ms ease-in-out 50ms, opacity 200ms ease-in-out; }
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform 200ms ease-in-out 50ms, opacity 200ms ease-in-out;
+            transition: transform 200ms ease-in-out 50ms, opacity 200ms ease-in-out; }
     .burger-btn span:nth-child(1) {
       margin: 0; }
     @media screen and (max-width: 767px) {
@@ -98,18 +118,30 @@ html, body {
         height: 3px; } }
 
 .burger-btn.is-open span:nth-child(2) {
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
   opacity: 0; }
+
 .burger-btn.is-open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg); }
+  -webkit-transform: translateY(8px) rotate(45deg);
+      -ms-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg); }
   @media screen and (max-width: 767px) {
     .burger-btn.is-open span:nth-child(1) {
-      transform: translateY(7px) rotate(45deg); } }
+      -webkit-transform: translateY(7px) rotate(45deg);
+          -ms-transform: translateY(7px) rotate(45deg);
+              transform: translateY(7px) rotate(45deg); } }
+
 .burger-btn.is-open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg); }
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+      -ms-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg); }
   @media screen and (max-width: 767px) {
     .burger-btn.is-open span:nth-child(3) {
-      transform: translateY(-7px) rotate(-45deg); } }
+      -webkit-transform: translateY(-7px) rotate(-45deg);
+          -ms-transform: translateY(-7px) rotate(-45deg);
+              transform: translateY(-7px) rotate(-45deg); } }
 
 #sloader {
   width: 100%;
@@ -127,15 +159,19 @@ html, body {
   top: 2rem;
   right: 5.5rem;
   z-index: 3;
-  transition: transform 300ms ease-out, opacity 400ms ease-out;
-  transform-origin: 100% 2rem;
-  box-shadow: 0.25rem 0.75rem 1rem rgba(0, 0, 0, 0.3); }
+  -webkit-transition: -webkit-transform 300ms ease-out, opacity 400ms ease-out;
+          transition: transform 300ms ease-out, opacity 400ms ease-out;
+  -webkit-transform-origin: 100% 2rem;
+      -ms-transform-origin: 100% 2rem;
+          transform-origin: 100% 2rem;
+  -webkit-box-shadow: 0.25rem 0.75rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.25rem 0.75rem 1rem rgba(0, 0, 0, 0.3); }
   @media screen and (max-width: 767px) {
     #nav {
       top: 0;
       right: 4.5rem; } }
   #nav:after {
-    content: " ";
+    content: ' ';
     display: block;
     width: 0;
     height: 0;
@@ -157,25 +193,33 @@ html, body {
       color: #e7e2c8; }
 
 #nav.hidden {
-  transform: scale(0);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   opacity: 0; }
 
 .print-view .section#section-1 #get_in_touch_link, .print-view .section#section-1 .burger-btn {
   display: none; }
+
 .print-view .section#section-3 .slider {
   height: auto; }
+
 .print-view .section#section-3 .slick-list {
   overflow: visible;
   height: auto !important; }
+
 .print-view .section#section-3 .slider .slide {
   display: block;
   float: none;
   opacity: 1;
   height: auto; }
+
 .print-view .section#section-3 .slide.slick-active {
   border: none !important; }
+
 .print-view .section#section-3 .slick-prev, .print-view .section#section-3 .slick-next, .print-view .section#section-3 .slick-dots {
   display: none; }
+
 .print-view .section#section-5 .item a {
   display: none; }
 
@@ -194,7 +238,7 @@ html, body {
       font-size: 1.5rem; } }
 
 .section:before {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   bottom: 0;
@@ -222,8 +266,12 @@ header#section-1 {
   max-height: 38rem; }
   header#section-1:before {
     background-color: #10222e;
-    transform: rotate(5deg);
-    transform-origin: bottom left; }
+    -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left; }
   @media screen and (min-width: 1168px) {
     header#section-1 .wrapper {
       padding-bottom: 30%; } }
@@ -240,7 +288,8 @@ header#section-1 {
     right: 0;
     max-width: 95%;
     max-height: 145%;
-    transition: opacity 800ms ease-out 400ms; }
+    -webkit-transition: opacity 800ms ease-out 400ms;
+            transition: opacity 800ms ease-out 400ms; }
     @media screen and (min-width: 768px) and (max-width: 1168px) {
       header#section-1 img {
         right: -8%;
@@ -259,7 +308,9 @@ header#section-1 {
     height: 12rem;
     top: 40%;
     left: 0;
-    transform: translateY(-50%); }
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
     @media screen and (max-width: 767px) {
       header#section-1 .mid-box {
         padding-left: 1rem;
@@ -270,7 +321,8 @@ header#section-1 {
       font-family: Ubuntu, Tahoma, Arial, Sans-Serif;
       font-size: 4rem;
       font-weight: normal;
-      transition: opacity 400ms ease-out, transform 400ms ease-out; }
+      -webkit-transition: opacity 400ms ease-out, -webkit-transform 400ms ease-out;
+              transition: opacity 400ms ease-out, transform 400ms ease-out; }
       @media screen and (min-width: 768px) and (max-width: 1168px) {
         header#section-1 .mid-box h1 {
           font-size: 3rem; } }
@@ -285,7 +337,8 @@ header#section-1 {
       color: #678b99;
       margin-top: 0.5rem;
       margin-bottom: 3rem;
-      transition: opacity 400ms ease-out 200ms, transform 400ms ease-out 200ms; }
+      -webkit-transition: opacity 400ms ease-out 200ms, -webkit-transform 400ms ease-out 200ms;
+              transition: opacity 400ms ease-out 200ms, transform 400ms ease-out 200ms; }
       @media screen and (min-width: 768px) and (max-width: 1168px) {
         header#section-1 .mid-box h2 {
           font-size: 1.3rem; } }
@@ -299,7 +352,8 @@ header#section-1 {
       color: #f0eddd;
       cursor: pointer;
       display: inline-block;
-      transition: opacity 400ms ease-out 400ms, transform 400ms ease-out 400ms; }
+      -webkit-transition: opacity 400ms ease-out 400ms, -webkit-transform 400ms ease-out 400ms;
+              transition: opacity 400ms ease-out 400ms, transform 400ms ease-out 400ms; }
       header#section-1 .mid-box #get_in_touch_link:hover {
         background-color: #183345; }
       @media screen and (max-width: 767px) {
@@ -310,9 +364,12 @@ header#section-1 {
 
 header#section-1.not_loaded img {
   opacity: 0; }
+
 header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1.not_loaded #get_in_touch_link {
   opacity: 0;
-  transform: translateY(3rem); }
+  -webkit-transform: translateY(3rem);
+      -ms-transform: translateY(3rem);
+          transform: translateY(3rem); }
 
 .section#section-2 {
   background-color: #10222e;
@@ -321,8 +378,12 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
   z-index: 3; }
   .section#section-2:before {
     background-color: #4a6b78;
-    transform: rotate(-5deg);
-    transform-origin: bottom right; }
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right; }
   .section#section-2 .wrapper {
     z-index: 2; }
     @media screen and (min-width: 768px) and (max-width: 1168px) {
@@ -337,9 +398,10 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
     position: relative;
     padding-bottom: 2rem;
     margin: 6rem 0 5rem 0;
-    transition: opacity 400ms ease-out, transform 400ms ease-out; }
+    -webkit-transition: opacity 400ms ease-out, -webkit-transform 400ms ease-out;
+            transition: opacity 400ms ease-out, transform 400ms ease-out; }
     .section#section-2 .timeline:before {
-      content: " ";
+      content: ' ';
       display: block;
       border-bottom: 1px solid #71adbe;
       position: absolute;
@@ -369,7 +431,7 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
           float: none;
           width: 100%; } }
       .section#section-2 .timeline li:before {
-        content: " ";
+        content: ' ';
         display: block;
         width: 0.75rem;
         height: 0.75rem;
@@ -378,18 +440,23 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
         position: absolute;
         top: 3.5rem;
         left: 50%;
-        transform: translateX(-50%); }
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
         @media screen and (max-width: 767px) {
           .section#section-2 .timeline li:before {
             top: 0.2rem;
             right: 35%;
             left: auto;
-            transform: translateX(0); } }
+            -webkit-transform: translateX(0);
+                -ms-transform: translateX(0);
+                    transform: translateX(0); } }
       .section#section-2 .timeline li i {
         display: block;
         text-align: center;
         font: normal 1.5rem Merriweather, Arial, Sans-Serif;
-        transition: opacity 400ms ease-out 200ms, transform 400ms ease-out 200ms; }
+        -webkit-transition: opacity 400ms ease-out 200ms, -webkit-transform 400ms ease-out 200ms;
+                transition: opacity 400ms ease-out 200ms, transform 400ms ease-out 200ms; }
         @media screen and (max-width: 767px) {
           .section#section-2 .timeline li i {
             font-size: 0.875rem;
@@ -397,7 +464,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
             top: 0;
             right: 0; } }
       .section#section-2 .timeline li h3 {
-        transition: opacity 400ms ease-out 400ms, transform 400ms ease-out 400ms; }
+        -webkit-transition: opacity 400ms ease-out 400ms, -webkit-transform 400ms ease-out 400ms;
+                transition: opacity 400ms ease-out 400ms, transform 400ms ease-out 400ms; }
       .section#section-2 .timeline li h3 a, .section#section-2 .timeline li h3 a:visited {
         display: block;
         text-decoration: none;
@@ -417,7 +485,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
         text-align: left;
         width: 65%;
         margin-top: 0.5rem;
-        transition: opacity 400ms ease-out 600ms, transform 400ms ease-out 600ms; }
+        -webkit-transition: opacity 400ms ease-out 600ms, -webkit-transform 400ms ease-out 600ms;
+                transition: opacity 400ms ease-out 600ms, transform 400ms ease-out 600ms; }
         @media screen and (min-width: 768px) and (max-width: 1168px) {
           .section#section-2 .timeline li p {
             width: 80%;
@@ -461,13 +530,19 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
             left: 0; } }
 
 .section#section-2.not_loaded .timeline {
-  transform: scale(0.125, 1);
+  -webkit-transform: scale(0.125, 1);
+      -ms-transform: scale(0.125, 1);
+          transform: scale(0.125, 1);
   opacity: 0; }
   @media screen and (max-width: 767px) {
     .section#section-2.not_loaded .timeline {
-      transform: scale(1, 0.125); } }
+      -webkit-transform: scale(1, 0.125);
+          -ms-transform: scale(1, 0.125);
+              transform: scale(1, 0.125); } }
   .section#section-2.not_loaded .timeline h3, .section#section-2.not_loaded .timeline p, .section#section-2.not_loaded .timeline i {
-    transform: translateY(2rem);
+    -webkit-transform: translateY(2rem);
+        -ms-transform: translateY(2rem);
+            transform: translateY(2rem);
     opacity: 0; }
 
 .section#section-3 {
@@ -476,8 +551,12 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
   z-index: 4; }
   .section#section-3:before {
     background-color: #f0eddd;
-    transform: rotate(5deg);
-    transform-origin: bottom left; }
+    -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left; }
   .section#section-3 .wrapper {
     margin-bottom: 2rem; }
   .section#section-3 .leftBox, .section#section-3 .rightBox {
@@ -518,7 +597,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
         margin-bottom: 3rem;
         text-align: center; } }
   .section#section-3 p {
-    transition: opacity 300ms ease-out, transform 300ms ease-out; }
+    -webkit-transition: opacity 300ms ease-out, -webkit-transform 300ms ease-out;
+            transition: opacity 300ms ease-out, transform 300ms ease-out; }
     .section#section-3 p b {
       color: #a5cbd6; }
   .section#section-3 .spacer {
@@ -529,9 +609,10 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
     list-style-type: none;
     padding-left: 1.75rem;
     margin-bottom: 1rem;
-    transition: opacity 300ms ease-out 100ms, transform 300ms ease-out 100ms; }
+    -webkit-transition: opacity 300ms ease-out 100ms, -webkit-transform 300ms ease-out 100ms;
+            transition: opacity 300ms ease-out 100ms, transform 300ms ease-out 100ms; }
   .section#section-3 .rightBox ul li:before {
-    content: " ";
+    content: ' ';
     display: block;
     position: absolute;
     top: 1px;
@@ -558,7 +639,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
         padding: 0 2rem;
         margin-bottom: 6.5rem; } }
     .section#section-3 .slider .slick-track {
-      perspective: 800px; }
+      -webkit-perspective: 800px;
+              perspective: 800px; }
     @media screen and (min-width: 1168px) {
       .section#section-3 .slider .slick-list {
         height: auto !important; } }
@@ -570,9 +652,13 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
       height: 26.5rem;
       border: 1px solid rgba(240, 237, 221, 0);
       padding: 2rem;
-      transition: opacity 200ms ease-out 0ms, border-color 500ms ease-out 320ms, transform 300ms ease-out;
-      transform: rotateY(28deg) scale(0.88);
-      transform-origin: 5% 50% 0;
+      -webkit-transition: opacity 200ms ease-out 0ms, border-color 500ms ease-out 320ms, -webkit-transform 300ms ease-out;
+              transition: opacity 200ms ease-out 0ms, border-color 500ms ease-out 320ms, transform 300ms ease-out;
+      -webkit-transform: rotateY(28deg) scale(0.88);
+              transform: rotateY(28deg) scale(0.88);
+      -webkit-transform-origin: 5% 50% 0;
+          -ms-transform-origin: 5% 50% 0;
+              transform-origin: 5% 50% 0;
       opacity: 0.35; }
       @media screen and (min-width: 768px) and (max-width: 1168px) {
         .section#section-3 .slider .slide {
@@ -582,11 +668,13 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
           height: auto;
           padding: 0.5rem; } }
     .section#section-3 .slider .slide.slick-active + .slide {
-      transform: rotateY(-28deg) scale(0.88); }
+      -webkit-transform: rotateY(-28deg) scale(0.88);
+              transform: rotateY(-28deg) scale(0.88); }
     .section#section-3 .slider .slide.slick-active {
       opacity: 1;
       border: 1px solid rgba(240, 237, 221, 0.35);
-      transform: rotateY(0deg) scale(1); }
+      -webkit-transform: rotateY(0deg) scale(1);
+              transform: rotateY(0deg) scale(1); }
     .section#section-3 .slider .slick-dots {
       bottom: -3rem;
       left: 0; }
@@ -602,7 +690,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
     font-size: 1.17rem;
     font-family: Merriweather, Arial, Sans-Serif;
     padding-bottom: 0.25rem;
-    transition: opacity 300ms ease-out, transform 300ms ease-out; }
+    -webkit-transition: opacity 300ms ease-out, -webkit-transform 300ms ease-out;
+            transition: opacity 300ms ease-out, transform 300ms ease-out; }
     @media screen and (max-width: 767px) {
       .section#section-3 .slider h3 {
         font-size: 1.1rem; } }
@@ -610,22 +699,29 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
     font-family: Merriweather, Arial, Sans-Serif;
     color: #71adbe;
     padding-bottom: 1rem;
-    transition: opacity 300ms ease-out 100ms, transform 300ms ease-out 100ms; }
+    -webkit-transition: opacity 300ms ease-out 100ms, -webkit-transform 300ms ease-out 100ms;
+            transition: opacity 300ms ease-out 100ms, transform 300ms ease-out 100ms; }
     @media screen and (max-width: 767px) {
       .section#section-3 .slider p.time {
         font-size: 0.875rem; } }
   .section#section-3 .slider p.desc {
     font-family: Ubuntu, Tahoma, Arial, Sans-Serif;
-    transition: opacity 300ms ease-out 200ms, transform 300ms ease-out 200ms; }
+    -webkit-transition: opacity 300ms ease-out 200ms, -webkit-transform 300ms ease-out 200ms;
+            transition: opacity 300ms ease-out 200ms, transform 300ms ease-out 200ms; }
     @media screen and (max-width: 767px) {
       .section#section-3 .slider p.desc {
         font-size: 0.875rem; } }
 
 .section#section-3.not_loaded p, .section#section-3.not_loaded h3 {
-  transform: translateY(2rem);
+  -webkit-transform: translateY(2rem);
+      -ms-transform: translateY(2rem);
+          transform: translateY(2rem);
   opacity: 0; }
+
 .section#section-3.not_loaded ul li {
-  transform: translateY(2rem);
+  -webkit-transform: translateY(2rem);
+      -ms-transform: translateY(2rem);
+          transform: translateY(2rem);
   opacity: 0; }
 
 .section#section-4 {
@@ -633,15 +729,20 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
   z-index: 5; }
   .section#section-4:before {
     background-color: #10222e;
-    transform: rotate(-5deg);
-    transform-origin: bottom right; }
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right; }
   .section#section-4 h2 {
     color: #10222e; }
   .section#section-4 h3 {
     color: #4a6b78;
     font-weight: normal;
     font-size: 1rem;
-    transition: transform 600ms ease-out; }
+    -webkit-transition: -webkit-transform 600ms ease-out;
+            transition: transform 600ms ease-out; }
   .section#section-4 .items {
     margin: 0 0 6rem 0; }
   .section#section-4 .item {
@@ -669,7 +770,9 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
         top: 35%; } }
   .section#section-4 .circle {
     position: relative;
-    transform: rotate(-125deg);
+    -webkit-transform: rotate(-125deg);
+        -ms-transform: rotate(-125deg);
+            transform: rotate(-125deg);
     width: 16rem;
     height: 8rem;
     margin-bottom: 3rem; }
@@ -685,22 +788,30 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
         height: 100%; } }
 
 .item:nth-child(1) {
-  transition: opacity 300ms ease-out, transform 300ms ease-out; }
+  -webkit-transition: opacity 300ms ease-out, -webkit-transform 300ms ease-out;
+          transition: opacity 300ms ease-out, transform 300ms ease-out; }
 
 .item:nth-child(2) {
-  transition: opacity 300ms ease-out 150ms, transform 300ms ease-out 150ms; }
+  -webkit-transition: opacity 300ms ease-out 150ms, -webkit-transform 300ms ease-out 150ms;
+          transition: opacity 300ms ease-out 150ms, transform 300ms ease-out 150ms; }
 
 .item:nth-child(3) {
-  transition: opacity 300ms ease-out 300ms, transform 300ms ease-out 300ms; }
+  -webkit-transition: opacity 300ms ease-out 300ms, -webkit-transform 300ms ease-out 300ms;
+          transition: opacity 300ms ease-out 300ms, transform 300ms ease-out 300ms; }
 
 .item:nth-child(4) {
-  transition: opacity 300ms ease-out 450ms, transform 300ms ease-out 450ms; }
+  -webkit-transition: opacity 300ms ease-out 450ms, -webkit-transform 300ms ease-out 450ms;
+          transition: opacity 300ms ease-out 450ms, transform 300ms ease-out 450ms; }
 
 .section#section-4.not_loaded .item {
-  transform: translateY(2rem);
+  -webkit-transform: translateY(2rem);
+      -ms-transform: translateY(2rem);
+          transform: translateY(2rem);
   opacity: 0; }
   .section#section-4.not_loaded .item h3 {
-    transform: translateY(2rem); }
+    -webkit-transform: translateY(2rem);
+        -ms-transform: translateY(2rem);
+            transform: translateY(2rem); }
 
 .section#section-5 {
   background-color: #10222e;
@@ -724,7 +835,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
   .section#section-5 img {
     width: 3rem;
     margin: 0 auto;
-    transition: opacity 150ms ease-out 300ms, transform 300ms ease-out 300ms; }
+    -webkit-transition: opacity 150ms ease-out 300ms, -webkit-transform 300ms ease-out 300ms;
+            transition: opacity 150ms ease-out 300ms, transform 300ms ease-out 300ms; }
     @media screen and (max-width: 767px) {
       .section#section-5 img {
         width: 2rem;
@@ -732,7 +844,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
   .section#section-5 p {
     color: #71adbe;
     margin-top: 1rem;
-    transition: opacity 150ms ease-out 600ms, transform 300ms ease-out 600ms; }
+    -webkit-transition: opacity 150ms ease-out 600ms, -webkit-transform 300ms ease-out 600ms;
+            transition: opacity 150ms ease-out 600ms, transform 300ms ease-out 600ms; }
     @media screen and (max-width: 767px) {
       .section#section-5 p {
         float: left;
@@ -750,7 +863,8 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
     border-radius: 4px;
     color: #f0eddd;
     text-decoration: none;
-    transition: opacity 150ms ease-out 900ms, transform 300ms ease-out 900ms; }
+    -webkit-transition: opacity 150ms ease-out 900ms, -webkit-transform 300ms ease-out 900ms;
+            transition: opacity 150ms ease-out 900ms, transform 300ms ease-out 900ms; }
     .section#section-5 a:hover, .section#section-5 a:visited:hover {
       background-color: #567c8b; }
     @media screen and (max-width: 767px) {
@@ -762,10 +876,13 @@ header#section-1.not_loaded h1, header#section-1.not_loaded h2, header#section-1
         font-size: 0.85rem; } }
 
 .section#section-5.not_loaded img {
-  transform: scale(0);
-  opacity: 0; }
-.section#section-5.not_loaded p, .section#section-5.not_loaded a {
-  transform: translateY(2rem);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   opacity: 0; }
 
-/*# sourceMappingURL=styles.css.map */
+.section#section-5.not_loaded p, .section#section-5.not_loaded a {
+  -webkit-transform: translateY(2rem);
+      -ms-transform: translateY(2rem);
+          transform: translateY(2rem);
+  opacity: 0; }
